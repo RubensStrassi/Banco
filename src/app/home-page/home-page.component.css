@@ -1,0 +1,44 @@
+.barraNavegacao {
+  background-color: #f37120;
+  height: 80px;
+}
+
+.logoItau {
+  padding: 0 32px;
+  max-width: 1280px;
+  margin: 0 auto 0 40px;
+  padding: 0 16px;
+}
+
+.itensNav{
+  margin-left: 40px;
+}
+
+.navigationMenu__label {
+  font-size: 19px;
+  line-height: 28px;
+  font-weight: 700;
+  color: #fff;
+  background-color: rgba(0,0,0,0);
+  border: none;
+  border-bottom: 4px solid rgba(0,0,0,0);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 24px 0;
+  background: unset;
+}
+
+.navigationMenu__label:hover {
+  border-bottom: 4px solid #fff;
+}
+.navigationMenu__label:focus {
+  border-bottom: 4px solid #fff;
+}
+
+.textoNav {
+  color: #fff;
+}

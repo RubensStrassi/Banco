@@ -3,6 +3,12 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { HomePageModule } from './home-page/home-page.module';
+
+import { LOCALE_ID } from '@angular/core';
+import localePt from '@angular/common/locales/pt';
+import { registerLocaleData } from '@angular/common';
+registerLocaleData(localePt);
 
 @NgModule({
   declarations: [
@@ -10,9 +16,15 @@ import { AppComponent } from './app.component';
   ],
   imports: [
     BrowserModule,
+    HomePageModule,
     AppRoutingModule
   ],
-  providers: [],
+  providers: [
+    {
+			provide: LOCALE_ID,
+			useValue: 'pt-BR',
+		},
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
